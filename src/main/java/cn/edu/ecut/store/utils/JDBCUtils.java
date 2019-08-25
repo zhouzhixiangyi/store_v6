@@ -8,6 +8,7 @@ import java.sql.Statement;
 import javax.sql.DataSource;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.junit.Test;
 
 public class JDBCUtils {
 	private static ComboPooledDataSource ds = new ComboPooledDataSource();
@@ -22,6 +23,14 @@ public class JDBCUtils {
 	 * @return
 	 * @throws SQLException
 	 */
+	@Test
+	public void test(){
+        try {
+            System.out.println(getConnection());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 	public static Connection getConnection() throws SQLException {
 		//从线程中获取conneciton
 		Connection conn = tl.get();

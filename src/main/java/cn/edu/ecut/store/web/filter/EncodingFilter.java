@@ -1,4 +1,4 @@
-package cn.edu.ecut.store.utils;
+package cn.edu.ecut.store.web.filter;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

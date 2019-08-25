@@ -122,4 +122,7 @@ public class User {
         this.state = state;
         this.code = code;
     }
+
+    public User() {
+    }
 }
